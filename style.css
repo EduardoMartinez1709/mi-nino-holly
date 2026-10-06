@@ -1,0 +1,393 @@
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#81e3dc;
+
+    text-align:center;
+
+    overflow-x:hidden;
+}
+
+.oculto{
+    display:none;
+}
+
+.pantalla{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+/* ========================= */
+/* INICIO */
+/* ========================= */
+
+.caja{
+
+    font-size:90px;
+
+    animation:flotar 2s infinite;
+}
+
+h1{
+
+    color:rgb(238, 31, 31);
+
+    font-size:50px;
+
+    margin-bottom:20px;
+}
+
+h2{
+
+    color:black;
+
+    margin:15px 0;
+}
+
+p{
+
+    color:black;
+
+    font-size:22px;
+}
+
+/* ========================= */
+/* BOTONES */
+/* ========================= */
+
+button{
+
+    background:white;
+
+    color:#26a69a;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    margin-top:30px;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:scale(1.1);
+}
+
+/* ========================= */
+/* CORAZÓN */
+/* ========================= */
+
+#corazon{
+
+    font-size:150px;
+
+    cursor:pointer;
+
+    animation:latido 1s infinite;
+
+    margin:30px 0;
+}
+
+#mensaje{
+
+    color:black;
+
+    font-size:30px;
+
+    max-width:900px;
+
+    font-weight:bold;
+
+    line-height:1.5;
+}
+
+/* ========================= */
+/* GALERÍA */
+/* ========================= */
+
+.galeria{
+    position:relative;
+    width:100%;
+    height:1000px;
+    margin-top:40px;
+}
+
+.polaroid{
+
+    position:absolute;
+
+    width:240px;
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.4s;
+}
+
+.polaroid:hover{
+
+    transform:scale(1.15) rotate(0deg) !important;
+
+    z-index:999;
+}
+
+.polaroid img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:5px;
+}
+
+.polaroid p{
+
+    color:#333;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    margin-top:10px;
+}
+
+/* FOTO 1 */
+
+.polaroid:nth-child(1){
+
+    top:20px;
+    left:5%;
+
+    transform:rotate(-10deg);
+}
+
+/* FOTO 2 */
+
+.polaroid:nth-child(2){
+
+    top:70px;
+    left:35%;
+
+    transform:rotate(8deg);
+}
+
+/* FOTO 3 */
+
+.polaroid:nth-child(3){
+
+    top:30px;
+    right:5%;
+
+    transform:rotate(-6deg);
+}
+
+/* FOTO 4 */
+
+.polaroid:nth-child(4){
+
+    top:430px;
+    left:8%;
+
+    transform:rotate(10deg);
+}
+
+/* FOTO 5 */
+
+.polaroid:nth-child(5){
+
+    top:390px;
+    left:38%;
+
+    transform:rotate(-8deg);
+}
+
+/* FOTO 6 */
+
+.polaroid:nth-child(6){
+
+    top:450px;
+    right:8%;
+
+    transform:rotate(8deg);
+}
+
+/* FOTO 7 */
+
+.polaroid:nth-child(7){
+
+    top:850px;
+    left:20%;
+
+    transform:rotate(-8deg);
+}
+
+/* FOTO 8 */
+
+.polaroid:nth-child(8){
+
+    top:850px;
+    right:20%;
+
+    transform:rotate(10deg);
+}
+
+.notaFinal{
+    margin-top:980px;
+    font-size:24px;
+    font-style:italic;
+    color:#2b2b2b;
+    text-align:center;
+}
+/* ========================= */
+/* ANIMACIONES */
+/* ========================= */
+
+@keyframes flotar{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes latido{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+/* AGREGAR ESTO ABAJO DE TODO */
+
+.oculto{
+    display: none;
+}
+
+.pantalla{
+    min-height: 100vh;
+}
+
+
+#pregunta{
+
+    color:black;
+
+    font-size:28px;
+
+    margin-bottom:30px;
+}
+
+#opciones button{
+
+    min-width:350px;
+
+    margin:10px;
+}
+
+
+.carta{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    text-align:left;
+}
+
+.carta p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+    color:#333;
+}
+
+.carta h1,
+.carta h2{
+
+    text-align:center;
+}
+
+
+.botonesFinales{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+#btnSi{
+
+    font-size:22px;
+}
+
+#btnNo{
+
+    font-size:22px;
+}
